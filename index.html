@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ayune Skincare Homepage</title>
+<!-- Google Fonts: Spline Sans (Display) and Playfair Display (Serif) for the editorial look -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f9f506",
+              "background-light": "#f8f8f5",
+              "background-dark": "#23220f",
+              "ayune-green": "#153e32", // Custom dark green for the brand
+              "ayune-sage": "#e6e6db",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"],
+              "serif": ["Playfair Display", "serif"],
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for a cleaner feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f8f5; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d1c7; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #153e32; 
+        }
+        .text-stroke-ayune {
+            -webkit-text-stroke: 1px #e6e6db;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-ayune-green antialiased font-display overflow-x-hidden selection:bg-primary selection:text-ayune-green">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Announcement Bar -->
+<div class="bg-ayune-green text-white py-2 px-4 text-center">
+<p class="text-xs font-medium tracking-wider uppercase">✨ Free Shipping on Orders Over $50</p>
+</div>
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full bg-background-light/90 backdrop-blur-md border-b border-ayune-sage/30">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-ayune-green text-3xl">spa</span>
+<h1 class="font-serif text-3xl font-bold tracking-tight text-ayune-green">Ayune</h1>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-ayune-green hover:text-ayune-green/70 transition-colors" href="#">Store</a>
+<a class="text-sm font-medium text-ayune-green hover:text-ayune-green/70 transition-colors" href="#">Makeup</a>
+<a class="text-sm font-medium text-ayune-green hover:text-ayune-green/70 transition-colors" href="#">Serum</a>
+<a class="text-sm font-medium text-ayune-green hover:text-ayune-green/70 transition-colors" href="#">Fragrance</a>
+<a class="text-sm font-medium text-ayune-green hover:text-ayune-green/70 transition-colors" href="#">About Us</a>
+</nav>
+<!-- Icons -->
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-ayune-sage/30 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-ayune-sage/30 transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+<button class="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-ayune-sage/30 transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-12 pb-20 px-6 lg:px-12 overflow-hidden">
+<!-- Background Decorative Circles -->
+<div class="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full border border-ayune-sage/40 opacity-50 pointer-events-none"></div>
+<div class="absolute bottom-[-10%] right-[-5%] w-[400px] h-[400px] rounded-full bg-ayune-sage/20 blur-3xl opacity-50 pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col gap-8">
+<h2 class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.1] text-ayune-green font-medium">
+                        Naturally Beautiful <br/>
+<i class="font-serif italic text-ayune-green/80">Radiantly</i> You
+                    </h2>
+<p class="text-ayune-green/70 text-lg max-w-md leading-relaxed">
+                        Experience the purity of nature refined by science. Formulations that bring out your inner glow with sustainable, ethically sourced ingredients.
+                    </p>
+<div class="flex flex-wrap items-center gap-4">
+<button class="bg-ayune-green text-white px-8 py-4 rounded-full font-bold hover:bg-ayune-green/90 transition-all flex items-center gap-2 group">
+                            Discover Products
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="flex gap-2">
+<span class="px-4 py-2 rounded-full border border-ayune-sage bg-white/50 text-xs font-bold text-ayune-green uppercase tracking-wide">Hydrated</span>
+<span class="px-4 py-2 rounded-full border border-ayune-sage bg-white/50 text-xs font-bold text-ayune-green uppercase tracking-wide">Radiance</span>
+<span class="px-4 py-2 rounded-full border border-ayune-sage bg-white/50 text-xs font-bold text-ayune-green uppercase tracking-wide">Nourishing</span>
+</div>
+</div>
+</div>
+<!-- Right Visual / Product Highlight -->
+<div class="lg:col-span-5 relative flex justify-center lg:justify-end mt-10 lg:mt-0">
+<div class="relative w-full max-w-md">
+<!-- Main Image -->
+<div class="aspect-[4/5] w-full rounded-[2rem] overflow-hidden shadow-2xl relative">
+<img alt="Model with glowing skin applying skincare product naturally" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa0TwLjJ2N3oYtTnYuU4G4J25ie6tNonHxdUXEEYJJfN_45IQ6hS6J7BnM3elT6wa9VSOvHOaoXiDUtz4ogGagyX67x1EfNkiFbELKvYLPVt8bzR9LZOc2AmtBQSLTBDOOLOcKR8haGkQNQKLIuTSFR0LMsFNZB4STwCbr1VNQq9YzXrMScMAmZBpAJBX7d_s0_aaOC8FUNS5McI4X_nL6yvTGDK11KD_MfReuHMttqc_lMm9ikpVQYcB6ZEdQnvFCJD2LRnHDK3z6"/>
+</div>
+<!-- Floating Product Card -->
+<div class="absolute -bottom-8 -left-8 bg-white p-4 rounded-xl shadow-lg border border-ayune-sage max-w-[280px] w-full flex items-center gap-4 animate-fade-in-up">
+<div class="w-16 h-16 bg-background-light rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Bottle of Ayune Glow Serum on a minimal background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ejExDg_ruDMF0pQvG1U9Fpo0hXaPs-TJ4V5AupDgW9rVz4HJ6k470XMzdTk1yBsv3CtPMejFlF482j2-wsqIH7_QzfXjCzj1-JpqNzuT0jlJaV9Z59TagneKrB6DzAgkoZWVpfRVi4tdQ_DuTMNxPnncFHFUnNt-ArVWizfBftZM6stkjieh_SdmfIKw9_UaK-5_alGM1Ny0RC_ad_N7_7Q7mGDqVuau2SIYrlzbzxSvCEsYjNRJkYttsNEPoBH4JJVcy_OTcmJx"/>
+</div>
+<div class="flex flex-col flex-1">
+<span class="text-xs text-ayune-green/60 font-medium uppercase">Best Seller</span>
+<h4 class="font-bold text-ayune-green leading-tight">Ayune Glow Serum</h4>
+<div class="flex items-center justify-between mt-1">
+<span class="text-sm font-medium">$48.00</span>
+<button class="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-ayune-green hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Campaign Section -->
+<section class="py-12 px-6 lg:px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="relative w-full aspect-video lg:aspect-[2.35/1] rounded-[2rem] overflow-hidden group cursor-pointer shadow-lg">
+<img alt="Cinematic shot of hands applying lotion in a spa setting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4r7HTTC80zEW6J1zNSaBVFnemiiSNPMZeGJeP3FkwucJaLUXrCVV3RSr2egnSAT-Pn3dSphPwg1XJz1IrutjeskEbtvwM_n3FELs3kWEZhxxWmOl0yFsIqGihCItEAd2JPtm0e-3ecijIHIo7LT7KZ_8R10wK_r2kK4qF9Hv4Q-71aDbIWA4WAThkCU1bs63kPZHdiyIEhQuboPglKMcorwiXP7D2tYRU3EiV9X1hycT572dw1HMJ52RuE6TEJLnbtdLBPqfAv7T4"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-8 right-8 bg-primary text-ayune-green px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">new_releases</span>
+                        New Release
+                    </div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-ayune-green text-3xl ml-1">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 w-full bg-gradient-to-t from-black/60 to-transparent text-white">
+<h3 class="font-serif text-3xl md:text-4xl mb-2">Daily Moisture Lock</h3>
+<div class="flex flex-wrap gap-4 items-center text-sm font-medium text-white/90">
+<span>Rare Botanicals</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>All-Day Hydration</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Vitamin E Enriched</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category + Spotlight Split -->
+<section class="py-20 px-6 lg:px-12 bg-white">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+<!-- Left Column: Categories -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="mb-10">
+<h2 class="font-serif text-4xl md:text-5xl text-ayune-green mb-6 leading-tight">
+                            Nourish, Hydrate &amp; <br/>Shine with Ayune
+                        </h2>
+<p class="text-ayune-green/60 text-base leading-relaxed">
+                            Our curated collections are designed to target specific skin concerns while maintaining our commitment to clean beauty.
+                        </p>
+</div>
+<div class="space-y-4">
+<a class="group flex items-center justify-between p-6 border border-ayune-sage rounded-xl hover:border-ayune-green transition-colors bg-background-light" href="#">
+<div class="flex items-center gap-4">
+<div class="bg-white p-2 rounded-full shadow-sm text-ayune-green">
+<span class="material-symbols-outlined">face_3</span>
+</div>
+<span class="font-serif text-xl text-ayune-green">Face Care</span>
+</div>
+<span class="material-symbols-outlined text-ayune-green opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between p-6 border border-ayune-sage rounded-xl hover:border-ayune-green transition-colors bg-background-light" href="#">
+<div class="flex items-center gap-4">
+<div class="bg-white p-2 rounded-full shadow-sm text-ayune-green">
+<span class="material-symbols-outlined">soap</span>
+</div>
+<span class="font-serif text-xl text-ayune-green">Body Care</span>
+</div>
+<span class="material-symbols-outlined text-ayune-green opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between p-6 border border-ayune-sage rounded-xl hover:border-ayune-green transition-colors bg-background-light" href="#">
+<div class="flex items-center gap-4">
+<div class="bg-white p-2 rounded-full shadow-sm text-ayune-green">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<span class="font-serif text-xl text-ayune-green">Natural Essentials</span>
+</div>
+<span class="material-symbols-outlined text-ayune-green opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all">arrow_forward</span>
+</a>
+</div>
+<div class="mt-10">
+<a class="inline-flex items-center font-bold text-ayune-green border-b-2 border-primary pb-1 hover:text-primary transition-colors" href="#">
+                            See More Products
+                        </a>
+</div>
+</div>
+<!-- Right Column: Spotlight Product -->
+<div class="lg:col-span-7 bg-background-light rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden shadow-sm">
+<img alt="Ayune Radiance Glow Serum bottle on a stone pedestal" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4P0IdAnY113xndm6wEmz0tKd6IdmC6nac8-ek0HAq-MCFgCxx2Wxb6tsKqNqtjPGG-wGnFkBuMb8ChCnN7Q6D79kzF5OnlbsoK947AB-rj47ETc09yNyz_E_YC41m6ANRn_JKcwWeKd4w48O7cHhUVFmGhE6edOUMkSCg4GdMPixGIml_905URo2QzjvTQ_Si_hru9QvEugSo3ySRWNnJNItoPfapRxo6fpqg0JC1R8bvwUjuoF4hAB_ts5YMBzPGGC9p5qOtd9GQ"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-between h-full py-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<span class="text-xs font-bold text-primary bg-ayune-green px-3 py-1 rounded-full uppercase tracking-wider">Spotlight</span>
+<div class="flex text-yellow-500 text-sm">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star_half</span>
+</div>
+</div>
+<h3 class="font-serif text-3xl text-ayune-green mb-2">Radiance Glow Serum</h3>
+<p class="text-ayune-green/70 text-sm mb-6">
+                                    Infused with Vitamin C and Hyaluronic Acid to brighten and plump skin instantly.
+                                </p>
+<p class="text-2xl font-bold text-ayune-green mb-6">$48.00</p>
+<button class="w-full bg-ayune-green text-white py-3 rounded-full font-bold hover:bg-ayune-green/90 mb-8 transition-colors">Add to Bag</button>
+</div>
+<div>
+<p class="text-xs font-bold text-ayune-green/50 uppercase tracking-widest mb-4">Complete the routine</p>
+<div class="flex gap-4">
+<div class="w-16 h-16 bg-white rounded-lg p-1 border border-ayune-sage cursor-pointer hover:border-ayune-green transition-colors">
+<img alt="Small jar of moisturizer" class="w-full h-full object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoOq-VL3VxxqB5r3O5-kwNjfShOekDEMUP0fG7piyOhtHgl0yOfPYqOJ2sEXu-uAzEHiXtuENiFr19HdbimUs5k2_uUBr1weVE8DwEcJlJ1lMo62cVm6cgW-hLp3hWZtjNmTw3-Jwtm0LgtetsKdhhDX6qOeepyzP_CVHp2SgFrqxJsCO6Z98qVus8ypF7dmdAC2Ku6gupK3QC7nrEig56shlLdqyg7xrCOti7vrEN5JR5CU3GHzMm9b_qE_cgG8FGZuNIKIdnu1lh"/>
+</div>
+<div class="w-16 h-16 bg-white rounded-lg p-1 border border-ayune-sage cursor-pointer hover:border-ayune-green transition-colors">
+<img alt="Small tube of cleanser" class="w-full h-full object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2BkODslv-j7NFUkVfcdj8LUOq34cEY2T3fe7hAXjnG1MHqDC2aEHzOQ7-ihnq3xbwLY00Bv1Xzycx3kfsoMn9viVFZd6Htk_rFkjZzKVPhI9_LImgYfGXsZR-x9PUz_jtbZdFyw5qP0QD3hMMML7nfIFmMoqkCQI6ANgtiSafHH_TrSYQuQ_pqKhDqhtv5PUdty7oUySN3QhlQGcg6uEndRweCKoeDYP-R7o6q4s59fJOeb9u6z-ueaYaIcqPXBBoG7CzYWDdEcp4"/>
+</div>
+<div class="w-16 h-16 bg-white rounded-lg p-1 border border-ayune-sage cursor-pointer hover:border-ayune-green transition-colors">
+<img alt="Small bottle of toner" class="w-full h-full object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_qIvnyoGKCxfospAhaWUwT6dUEp7o5mClXQRV7j9bbKy5CwxTGYUo5kniGe__Lw3Mpw9hXhxzTihjtjtttKvGsX1JbLgHiiDeIBaSh683jBGDYeqru4bu6g3QLztXUUuKZBqalVYAHLrJrpF1ZoSYHa986O0fKx7DDYy_vydEfJ2wiAJNzs9pAzbubGuAIT11xTOokxO93IT-jMq_gE7r2bhQPjKE8MbDfC67VWCeH3s2zpmt_LEye46irT7IPyE-gjOsbcjRSel"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Product Editorial -->
+<section class="py-20 relative overflow-hidden bg-background-light">
+<!-- Watermark -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+<span class="font-serif text-[15rem] md:text-[25rem] font-bold text-ayune-sage/20 select-none whitespace-nowrap opacity-30">AYUNE</span>
+</div>
+<div class="max-w-[1200px] mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+<!-- Left -->
+<div class="md:text-right order-2 md:order-1">
+<h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-ayune-green mb-6">Gentle <br/> Exfoliating <br/> Scrub</h2>
+<p class="text-ayune-green/70 mb-8 max-w-xs ml-auto">
+                            Reveal your softest skin with our award-winning formula. Gentle enough for daily use.
+                        </p>
+<button class="border border-ayune-green text-ayune-green hover:bg-ayune-green hover:text-white px-8 py-3 rounded-full font-bold transition-all">
+                            Shop Now
+                        </button>
+</div>
+<!-- Center Image -->
+<div class="order-1 md:order-2 flex justify-center">
+<div class="w-64 h-64 md:w-80 md:h-80 relative rounded-full bg-white shadow-2xl flex items-center justify-center p-6 border border-ayune-sage/50">
+<!-- Placeholder for 3D Product Image -->
+<img alt="Top down view of an open jar of exfoliating scrub texture" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6PfdRJ95cmP2PPwHHbNPblUql4RT02vBe-444rvmirDEqj_27BnYf8kKSESSOPKpaDE4PHa1fm2UHAlDrQhDDF9DOtAgzE3AqAAHnmmBe1TgtI8WjJHEFkn88NJsvWrF2efbBR-8pmbANnvwoLpior1_a6EECEoIgF9s11o03JoqO6mClZ2fBvwf7dX1xo_AqvsRG1MJl-HAAZdrukDayT1_nv6Kv1_bZA-3g_5n1cwdeFTQOvNHigd9iWybJCJvKp4br3gizE8QL"/>
+</div>
+</div>
+<!-- Right -->
+<div class="order-3 flex flex-col gap-6">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm text-ayune-green group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">grain</span>
+</div>
+<div>
+<h4 class="font-bold text-ayune-green">Rice Powder</h4>
+<p class="text-xs text-ayune-green/60">Natural physical exfoliant</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm text-ayune-green group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">local_florist</span>
+</div>
+<div>
+<h4 class="font-bold text-ayune-green">Papaya Enzymes</h4>
+<p class="text-xs text-ayune-green/60">Brightens and smooths</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm text-ayune-green group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div>
+<h4 class="font-bold text-ayune-green">Aloe Vera</h4>
+<p class="text-xs text-ayune-green/60">Soothes and hydrates</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-24 px-6 lg:px-12 bg-white relative">
+<div class="absolute top-10 right-10 w-20 h-20 border-4 border-ayune-sage/40 rounded-full"></div>
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row gap-12 md:gap-24 items-start md:items-end mb-12">
+<div class="flex-1">
+<span class="text-xs font-bold text-primary bg-ayune-green px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Testimonials</span>
+<h2 class="font-serif text-4xl md:text-5xl text-ayune-green">Real Stories <br/> Real Results</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-14 h-14 rounded-full border border-ayune-sage hover:bg-ayune-green hover:text-white hover:border-ayune-green transition-all flex items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-14 h-14 rounded-full bg-ayune-green text-white border border-ayune-green hover:bg-white hover:text-ayune-green transition-all flex items-center justify-center">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Review Card 1 -->
+<div class="bg-background-light p-8 rounded-2xl relative group hover:-translate-y-2 transition-transform duration-300">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Portrait of Sarah J." class="w-14 h-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiT06izsIcWYCLlgARcZUGx3FtKeNcx23HFR1mRQek8_JRu2AoCDfy2k8wmvUgIcGNQdtiDC19DnKwEOQDKhHf36rwAV46EHCthE-BjGuTJ3RQ1QMbjVcy59PnKoDC0I8MR8pabtKV8Lky2NLGVG8wmK02kgdReH7gxACNrjgDIuIbuSovh8dm0ZhT3kNxw_3UFCxUMHJsYb9jV7-bdEr9lv0DIAqf8Yc0N_O9P1Yg4zjoNVCD_EXuAVz4LHZC4QgAAG3Bnj_25LCk"/>
+<div>
+<h4 class="font-bold text-ayune-green">Sarah J.</h4>
+<p class="text-xs text-ayune-green/60">Dry Skin Type</p>
+</div>
+<div class="ml-auto text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-ayune-green/80 italic mb-6">"My skin has never felt this hydrated. The serum is a game changer for my winter dry patches."</p>
+<a class="text-sm font-bold text-ayune-green underline decoration-primary decoration-2 underline-offset-4" href="#">Read full review</a>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-background-light p-8 rounded-2xl relative group hover:-translate-y-2 transition-transform duration-300 hidden md:block">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Portrait of Emily R." class="w-14 h-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ3Zx_HLZlbQq5fjB5mxJwb7qUpVqBrdAq57hbw9Pg6Y8dq-HhHEEN2lNNyb7dYZFduA7q6z8l7bzsE8u1dsJIUtHzGRUjODoOxLChy9Uv_lpg7fckDXzXXkSHNb5KAK-9oKvXGBWnT59f7jnI07K9lAE6jshkwb05MMLPmn-2nOvgL2RBx7F9o7z95L812OQVN9biMFoIEPSFzjrIJQlgXKfEed5xeHsHN6qVftHS4u1B5yIwoQOmw7ACLYQ80J6teSeA0HQTo4Vz"/>
+<div>
+<h4 class="font-bold text-ayune-green">Emily R.</h4>
+<p class="text-xs text-ayune-green/60">Sensitive Skin</p>
+</div>
+<div class="ml-auto text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-ayune-green/80 italic mb-6">"I've struggled with redness for years. The calming toner worked miracles in just one week."</p>
+<a class="text-sm font-bold text-ayune-green underline decoration-primary decoration-2 underline-offset-4" href="#">Read full review</a>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-background-light p-8 rounded-2xl relative group hover:-translate-y-2 transition-transform duration-300 hidden lg:block">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Portrait of Michael T." class="w-14 h-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0bTXTFUU63Vfsi-xGvUuZqyA4ab1s_9DVE8BzKKOpFwHCXVJDE9mZPIph0ythtOWFB_vp9-869joX75QWRuPe43wAwTCxPX2dDWe2v_iLXwEXZ_7kCc1TfwaALCZkJbQuqfYZlwKQdqegd_aOX-SVlY0KTeZbfHdor7qCTOuKf5A6VW5-k_MEzmlbnPrA47bLTvG-7HyVkIxb0Z4RtFvusq1rd6idAH6J1WF5qNkJWCOWq6Df8IREoLjCdQYgT7Tepd_la-NurXyg"/>
+<div>
+<h4 class="font-bold text-ayune-green">Michael T.</h4>
+<p class="text-xs text-ayune-green/60">Combination Skin</p>
+</div>
+<div class="ml-auto text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-ayune-green/80 italic mb-6">"The exfoliating scrub is gentle yet effective. It doesn't strip my skin like others do."</p>
+<a class="text-sm font-bold text-ayune-green underline decoration-primary decoration-2 underline-offset-4" href="#">Read full review</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-12 px-6 lg:px-12">
+<div class="max-w-[1440px] mx-auto relative rounded-[3rem] overflow-hidden min-h-[400px] flex items-center justify-center text-center">
+<img alt="Abstract blurred nature background with warm light" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjg7QO-NcyiFcj_1wNUm6p0vCZtbAKm_XsiwLTIJfmxczWvLf3mEoVfs1FhjkZLIPChxy51YH5u3LJ6EmqNWV5b8tU9cAXCeITaxD_q2CSqYSLqxxPVYsnBMQ9nkrdiAyXD5fTPSLyTm-pz0SQ1VtXN-QM-YQ68_f6qi24pImD2gonVudiq8xeidlbU-v1LIHm1bhr2Pveva1c4GIJs0eOmouxi4pQf1KIk6k1lSLeYmcmfX4eAizHUb_euacjt2So5gRHz5ADvgwX"/>
+<div class="absolute inset-0 bg-ayune-green/40 backdrop-blur-[2px]"></div>
+<div class="relative z-10 px-6 max-w-3xl">
+<h2 class="font-serif text-4xl md:text-6xl text-white mb-6">Your Glow Starts Here</h2>
+<p class="text-white/90 text-lg md:text-xl mb-10 font-light">Join thousands of others who have transformed their skincare routine with Ayune.</p>
+<button class="bg-primary text-ayune-green hover:bg-white transition-colors px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl scale-100 hover:scale-105 transform duration-200">
+                        Shop Now
+                    </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-ayune-green text-white pt-24 pb-12 rounded-t-[3rem] mt-12 relative overflow-hidden">
+<!-- Decorative Circles in Footer -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none translate-y-1/2 -translate-x-1/2"></div>
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary">spa</span>
+<h2 class="font-serif text-3xl font-bold">Ayune</h2>
+</div>
+<p class="text-white/60 mb-8 max-w-xs">
+                            Glow With Us, Anytime &amp; Anywhere. Sustainable beauty for the modern soul.
+                        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-ayune-green transition-colors" href="#">
+<span class="text-sm font-bold">Ig</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-ayune-green transition-colors" href="#">
+<span class="text-sm font-bold">Fb</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-ayune-green transition-colors" href="#">
+<span class="text-sm font-bold">Tt</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6 text-primary">Quick Links</h4>
+<ul class="space-y-4 text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">Shop All</a></li>
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Journal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6 text-primary">Support</h4>
+<ul class="space-y-4 text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h4 class="font-bold text-lg mb-6 text-primary">Get Exclusive Offers</h4>
+<p class="text-white/60 text-sm mb-4">Subscribe to our newsletter for 10% off your first order.</p>
+<form class="flex flex-col gap-3">
+<input class="w-full bg-white/5 border border-white/10 rounded-full px-5 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-primary transition-colors" placeholder="Your email address" type="email"/>
+<button class="w-full bg-primary text-ayune-green font-bold rounded-full px-5 py-3 hover:bg-white transition-colors" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+<p>© 2024 Ayune Skincare. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
